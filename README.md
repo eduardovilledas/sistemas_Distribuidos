@@ -1,6 +1,6 @@
-# sistemas_Distribuidos
-Practicas y proyecto para la UA Sistemas Distribuidos
+# Sistemas_Distribuidos
+Repocitorio dedicado y creado para almacenar las racticas y proyecto, creados en equipo para la UA Sistemas Distribuidos del grupo 2TV13 2022/2
 Integrantes:
-  -Bernal Servin Alonso
-  -Vargas Sánchez Andrea Liliana
-  -Villedaz Gozalez Eduardo
+  * Bernal Servin Alonso
+  * Vargas Sánchez Andrea Liliana
+  * Villedaz Gozalez Eduardo
