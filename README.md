@@ -15,4 +15,12 @@ En una terminal (Linux de preferencia) nos colocamos en la carpeta y dijitamos e
 ```bash
 $ Make
 ```
-Para esta serie de programas es necesario agregar una entrada al  `serices` en linux en el directorio `private/etc`
+Para esta serie de programas es necesario agregar la entrada
+```
+cpp_java    tcp/15557
+```
+o
+```
+cpp_java    15557/tcp
+```
+segun sea el formato del archivo  `serices` en linux en el directorio `private/etc`
