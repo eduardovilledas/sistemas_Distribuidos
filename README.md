@@ -5,4 +5,5 @@ Integrantes:
   * Vargas Sánchez Andrea Liliana
   * Villedaz Gozalez Eduardo
 
-## Practica 1
+## Practica_1
+## [Practica_1](https://github.com/BernalSerAlonso/sistemas_Distribuidos/tree/main/Practica_1)
