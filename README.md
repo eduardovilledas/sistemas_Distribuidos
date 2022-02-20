@@ -26,4 +26,25 @@ cpp_java    15557/tcp
 ```
 segun sea el formato del resto de entradas en dicho archivo, En neesario porque nos especicara el puerto de comunicacion para nuestros programas
 
-El resto de archis necesarios estan separados en dos carpetas [Socket_C](https://github.com/BernalSerAlonso/sistemas_Distribuidos/tree/main/Practica_1/Socket._C) y [Socket_Java](https://github.com/BernalSerAlonso/sistemas_Distribuidos/tree/main/Practica_1/Socket_Java) 
+### [Socket_C](https://github.com/BernalSerAlonso/sistemas_Distribuidos/tree/main/Practica_1/Socket._C)
+En esta carpta podemos encontrar tanto un archivo `Cliente` como un `Servidor` y un archivo `Makefile` que nos ayudara a compilarlos, pero antes debemos modificarlo 
+```
+all : Servidor Cliente
+
+PATH_CHSOCKET= DIRECTORIO
+
+CFLAGS = -g -I. -I$(PATH_CHSOCKET)
+
+Servidor : Servidor.o
+	cc Servidor.o -L$(PATH_CHSOCKET) -lChSocket -o Servidor
+
+Cliente : Cliente.o
+	cc Cliente.o -L$(PATH_CHSOCKET) -lChSocket -o Cliente
+
+clean :
+	rm *.o Cliente Servidor
+```
+donde en lugar de `DIRECTORIO` debemos colocar la el directorio donde esta la carpeta de la libreria, ppr ejemplo `/Users/alonsobernal/Desktop/libreria`
+### Socket_Java
+
+El resto de archis necesarios estan separados en dos carpetas y [Socket_Java](https://github.com/BernalSerAlonso/sistemas_Distribuidos/tree/main/Practica_1/Socket_Java) 
