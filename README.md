@@ -6,5 +6,5 @@ Integrantes:
   * Villedaz Gozalez Eduardo
 
 ## [Practica_1](https://github.com/BernalSerAlonso/sistemas_Distribuidos/tree/main/Practica_1)
-### INTRODUCCIÓN AL MANEJO DE SOCKETS
+### Introduccion al manejo de sockets
 
