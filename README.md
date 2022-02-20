@@ -4,3 +4,5 @@ Integrantes:
   * Bernal Servin Alonso
   * Vargas Sánchez Andrea Liliana
   * Villedaz Gozalez Eduardo
+
+##Practica 1
