@@ -24,12 +24,14 @@ main (){
 		printf ("No ha sido posible abrir Socket_Servidor\n");
 		exit (-1);
 	}
+	printf ("	ESPERANDO\n");
 	Socket_Cliente = acceptsConexion_Client (Socket_Servidor);
 	if (Socket_Servidor == -1)
 	{
 		printf ("Fallamos al recibir la peticion de conexion\n");
 		exit (-1);
 	}
+	printf ("	CONECTADO\n");
 
 	//Pasamos un primer mensaje predefinido con su numero de caracteres +1
    	Longitud_Cadena = 30;
@@ -41,13 +43,13 @@ main (){
 	   	//enviamos el mensaje por el socket abierto 
 	   	writeSocket (Socket_Cliente, (char *)&Aux, sizeof(Longitud_Cadena));
 	   	writeSocket (Socket_Cliente, Cadena, Longitud_Cadena);
-	   	printf ("ServidorC Enviado: %s\n", Cadena);
+	   	printf ("SERVIDOR enviado: %s\n", Cadena);
 	   
 	   	//escuchamos el socket en espera de mensajes
 	   	readSocket (Socket_Cliente, (char *)&Aux, sizeof(Longitud_Cadena));
 	   	Longitud_Cadena = ntohl(Aux);
 		readSocket (Socket_Cliente, Cadena, Longitud_Cadena);
-	   	printf ("ServidorC Recibido: %s\n", Cadena);
+	   	printf ("SERVIDOR recibido: %s\n", Cadena);
 
 	   	Salida = Cadena;
 	   	Longitud_Cadena = 49;
