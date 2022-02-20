@@ -45,6 +45,19 @@ clean :
 	rm *.o Cliente Servidor
 ```
 donde en lugar de `DIRECTORIO` debemos colocar la el directorio donde esta la carpeta de la libreria, ppr ejemplo `/Users/alonsobernal/Desktop/libreria`
-### Socket_Java
+y para poder compilar el archivo seguimos los mismos pasos que para la libreria, modificando el directorio
+```bash
+$ cd .../.../Socket_c
+$ Make
+```
 
-El resto de archis necesarios estan separados en dos carpetas y [Socket_Java](https://github.com/BernalSerAlonso/sistemas_Distribuidos/tree/main/Practica_1/Socket_Java) 
+### [Socket_Java](https://github.com/BernalSerAlonso/sistemas_Distribuidos/tree/main/Practica_1/Socket_Java)
+En el caso de los archivos .java es un poco mas simple, solo debemos colocarnos en el directorio donde esten los archivos (usando la terminal) y ejecutar el comando:
+```bash
+$ javac SocketServidor.java SocketCliente.java DatoSocket.java
+```
+he irlos ejecutando uno por uno segun sea el caso con el comando: (por ejemplo)
+```bash
+$ java SocketServidor
+```
+
